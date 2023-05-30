@@ -1,0 +1,19 @@
+business
+entertainment
+general
+health
+science
+sports
+technology
+
+
+ <Route  path="/entertainment"> <News  key="entertainment" pagesize={6} country="in" category="entertainment"/></Route>
+        <Route  path="/business"> <News  key="business" pagesize={6} country="in" category="business"/></Route>
+        <Route path="/"> <News  key="gen" pagesize={6} country="in" category="general"/> </Route>
+        <Route  path="/science"> <News key="scien" pagesize={6} country="in" category="science"/></Route>
+        <Route  path="/health"> <News key="healt" pagesize={6} country="in" category="health"/></Route>
+        <Route path="/technology"> <News key="tech" pagesize={6} country="in" category="technology"/></Route>
+
+
+
+        <link className="navbar-brand"to="/Navbar">Navbar</link>
