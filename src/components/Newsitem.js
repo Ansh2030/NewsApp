@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 
-export default class Newsitem extends Component {
-  constructor(){
-    super();
-  }
-  render() {
-    let {title, description , imageurl, newsurl, auther , time}= this.props;
+const Newsitem =(props)=> {
+ 
+
+    let {title, description , imageurl, newsurl, auther , time}= props;
     return (
       <div >
         <div className="card" style={{width: "18rem"}}>
@@ -13,11 +11,13 @@ export default class Newsitem extends Component {
         <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description}</p>
-        <p class="card-text"><small>By {auther==null?"Unknown":auther} at {time}</small></p>
+        <p className="card-text"><small>By {auther==null?"Unknown":auther} at {time}</small></p>
         <a href={newsurl} target="_blank" className="btn btn-sm btn-primary">read more</a>
         </div>
         </div>
       </div>
     )
-  }
+  
 }
+
+export default Newsitem;
